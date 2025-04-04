@@ -1,0 +1,38 @@
+
+#corpo{
+    border: 3px solid black;
+    width: auto;
+    height: auto;
+}
+#meio{
+    display: flex;
+    flex: 1; 
+}
+#topo{
+    border: 3px solid blue;
+    width: auto;
+    height: 150px;
+}
+#esquerda{
+    border: 3px solid green;
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+}
+#direita{
+    border: 3px solid pink;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+}
+#centro{
+    border: 3px solid yellow;
+    height: auto;
+    flex-grow: 1;
+    margin:auto ;
+}
+#rodape{
+    border: 3px solid red;
+    width: auto;
+    height: 50px;
+}
