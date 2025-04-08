@@ -1,9 +1,11 @@
-
-#corpo{
+html, body {
+    height: 100%;
+  }
+#corpo {
     border: 3px solid black;
-    width: auto;
-    height: auto;
-}
+    display: flex;
+    flex-direction: column;
+    height: 100%;}
 #meio{
     display: flex;
     flex: 1; 
@@ -15,13 +17,13 @@
 }
 #esquerda{
     border: 3px solid green;
-    width: 200px;
+    width: 20%;
     height: auto;
     margin-right: auto;
 }
 #direita{
     border: 3px solid pink;
-    width: 200px;
+    width: 20%;
     height: auto;
     margin-left: auto;
 }
@@ -29,10 +31,12 @@
     border: 3px solid yellow;
     height: auto;
     flex-grow: 1;
-    margin:auto ;
+
 }
 #rodape{
     border: 3px solid red;
     width: auto;
     height: 50px;
 }
+
+   
