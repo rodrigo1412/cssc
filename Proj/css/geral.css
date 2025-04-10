@@ -1,9 +1,3 @@
-h1 {
-    color: white;
-}
-ol{
-    text-shadow: 2cm;
-}
 html, body {
     height: 100%;
   }
@@ -18,10 +12,10 @@ html, body {
     flex: 1; 
 }
 #topo{
-    /*border: 3px solid lightblue;*/
+    border: 3px solid blue;
     width: auto;
     height: 150px;
-    background: black;
+
 }
 #esquerda{
     border: 3px solid green;
