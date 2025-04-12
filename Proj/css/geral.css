@@ -1,7 +1,7 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body {
+    height: 99%;
+    box-sizing: border-box;
 }
 
 #corpo {
@@ -10,46 +10,18 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
 #topo {
     border: 3px solid black;
     border-radius: 16px;
-    height: 150px;
+    height: 12vh;             
+    min-height: 10%;         
     margin: 10px;
     overflow: hidden;
 }
 
-#meio {
-    display: flex;
-    flex: 1;
-    margin: 10px;
-    gap: 10px;
-}
-
-#esquerda, #direita {
-    border: 3px solid black;
-    width: 20%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-#centro {
-    border: 3px solid black;
-    flex-grow: 1;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-#rodape {
-    border: 3px solid black;
-    border-radius: 16px;
-    margin: 10px;
-    height: 50px;
-}
 
 #menu {
     background-color: black;
@@ -58,28 +30,65 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 60px;
 }
 
 #menu div {
     border: 3px solid white;
     border-radius: 16px;
     flex-grow: 1;
-    height: auto;
+    height: 45px;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-#botao1, #botao2, #botao3, #botao4, #botao5 {
-    border: 3px solid white;
-    border-radius: 16px;
-    flex-grow: 1;
-    height: 45px;
-    margin: 10px;
-    width: 10%;
+#botao1,
+#botao2,
+#botao3,
+#botao4,
+#botao5 {
     color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#meio {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    gap: 10px;
+    min-height: 40vh;
+}
+
+#esquerda,
+#direita {
+    flex: 0 0 15%;
+    height: auto;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#centro {
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 3px solid black;
+}
+
+#rodape {
+    border: 3px solid black;
+    border-radius: 16px;
+    margin: 10px;
+    height: 8vh;              /* altura relativa ao viewport */
+    min-height: 8px;         /* garante altura mínima */
+    overflow: hidden;
 }
 
 img {
@@ -87,4 +96,10 @@ img {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
