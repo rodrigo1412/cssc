@@ -1,6 +1,5 @@
-html,
-body {
-    height: 99%;
+html, body {
+    height: 98%;
     box-sizing: border-box;
 }
 
@@ -16,12 +15,11 @@ body {
 #topo {
     border: 3px solid black;
     border-radius: 16px;
-    height: 12vh;             
-    min-height: 10%;         
+    height: 12vh;
+    min-height: 10%;
     margin: 10px;
     overflow: hidden;
 }
-
 
 #menu {
     background-color: black;
@@ -42,18 +40,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition: background-color 0.3s ease;suave 
 }
 
-#botao1,
-#botao2,
-#botao3,
-#botao4,
-#botao5 {
+#menu div:hover {
+    background-color: white;
+}
+
+.botao-link {
     color: white;
-    text-align: center;
+    text-decoration: none;
     font-weight: bold;
-    margin: 10px;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+/* Estilo para o texto ao passar o mouse */
+#menu div:hover .botao-link {
+    color: black; /* Texto fica preto quando o mouse passa */
 }
 
 #meio {
@@ -86,8 +93,8 @@ body {
     border: 3px solid black;
     border-radius: 16px;
     margin: 10px;
-    height: 8vh;              /* altura relativa ao viewport */
-    min-height: 8px;         /* garante altura mínima */
+    height: 8vh;
+    min-height: 8px;
     overflow: hidden;
 }
 

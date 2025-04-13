@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
     height: 99%;
     box-sizing: border-box;
-    background-color: seagreen;
+    background-color: red;
 }
 
 #corpo {
@@ -33,7 +34,7 @@ html, body {
 }
 
 #menu div {
-    border: 3px solid seagreen;
+    border: 3px solid red;
     border-radius: 16px;
     flex-grow: 1;
     height: 45px;
@@ -41,16 +42,17 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease; /* Transição suave */
+    transition: background-color 0.3s ease;
 }
 
 /* Estilo para os botões */
 #menu div:hover {
-    background-color: seagreen; /* Fundo branco ao passar o mouse */
+    background-color: red;
+    /* Fundo branco ao passar o mouse */
 }
 
 .botao-link {
-    color: seagreen;
+    color: red;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -62,7 +64,8 @@ html, body {
 
 /* Estilo para o texto dos botões */
 #menu div:hover .botao-link {
-    color: black; /* Texto fica preto quando o mouse passa */
+    color: black;
+    /* Texto fica preto quando o mouse passa */
 }
 
 #meio {
